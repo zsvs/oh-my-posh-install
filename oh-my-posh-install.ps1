@@ -6,7 +6,7 @@ choco upgrade oh-my-posh
 Install-Module oh-my-posh -Scope CurrentUser
 Install-Module posh-git -Scope CurrentUser
 
-$ProfileContet = @("Import-Module posh-git", "Import-Nodule oh-my-posh", "Set-PoshPrompt -Theme Paradox")
+$ProfileContet = @("Import-Module posh-git", "Import-Module oh-my-posh", "Set-PoshPrompt -Theme Paradox")
 
 Set-Content -Path "C:\Users\$env:USERNAME\Documents\PowerShell\Microsoft.PowerShell_profile_2.ps1" -Value $ProfileContet
 
