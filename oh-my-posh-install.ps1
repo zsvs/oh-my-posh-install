@@ -1,6 +1,6 @@
 ﻿Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-choco upgrade chocolatey
+Deprecated
 choco install oh-my-posh
 choco upgrade oh-my-posh
 Install-Module oh-my-posh -Scope CurrentUser
